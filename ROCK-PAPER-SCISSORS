@@ -1,0 +1,19 @@
+import random
+def rps():
+    
+    while True:
+        choices=['rock','paper','scissors']
+        pc=input("Rock Paper Scissors...!")
+        cc=random.choice(choices)
+        print(f"Computer chooses: {cc}")
+        if(pc==cc):
+            print("TIE..")
+        elif((pc=='scissors' and cc=='paper') or (pc=='paper'and cc=='rock') or(pc=='rock' and cc=='scissors')):
+            print("HURRAY...! YOU WIN")
+        else:
+            print("YOU LOOSE... TRY AGAIN")
+        
+        play_again=input("Do you want to play this game again..?(yes/no)")
+        if play_again.lower()!='yes':
+            break
+rps()
