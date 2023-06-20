@@ -1,0 +1,17 @@
+x=int(input("Enter the first number:"))
+y=int(input("Enter the second number:"))
+ch=input("Enter the operation you want to do?")
+def Calculator(x,y):
+    
+    if ch=='+':
+        return x+y
+    elif ch== '-':
+        return x-y
+    elif ch=='*':
+        return x*y
+    elif ch=='/':
+        return x/y
+    else:
+        print("INVALID INPUT")
+result=Calculator(x,y)
+print(x,ch,y,"=",result)
